@@ -3,6 +3,14 @@
 [JavaScript Algorithms and Data Structures Projects: Palindrome Checker](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/palindrome-checker "FreeCodeCamp Palindrome Checker")  
 
 ```
+function reverseString(str) {
+  //Step 4. Return the reversed string
+  var joinArray = str.split("").reverse().join("");
+  console.log(joinArray);
+  return joinArray; // "olleh"
+}//should be able to refactor this tighter, maybe as an anonymous function
+reverseString("hello");
+
 function palindrome(str) {
 
   // if str === rts return true
@@ -44,21 +52,10 @@ let result = quoteSample.match(myRegex); // sample of regex
 [Three Ways to Reverse a String in JavaScript](https://medium.freecodecamp.org/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb "medium")  
 ```
 function reverseString(str) {
-    // Step 1. Use the split() method to return a new array
-    var splitString = str.split(""); // var splitString = "hello".split("");
-    // ["h", "e", "l", "l", "o"]
- 
-    // Step 2. Use the reverse() method to reverse the new created array
-    var reverseArray = splitString.reverse(); // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
-    // ["o", "l", "l", "e", "h"]
- 
-    // Step 3. Use the join() method to join all elements of the array into a string
-    var joinArray = reverseArray.join(""); // var joinArray = ["o", "l", "l", "e", "h"].join("");
-    // "olleh"
-    
-    //Step 4. Return the reversed string
-    return joinArray; // "olleh"
-}
- 
+  //Step 4. Return the reversed string
+  var joinArray = str.split("").reverse().join("");
+  console.log(joinArray);
+  return joinArray; // "olleh"
+}//should be able to refactor this tighter, maybe as an anonymous function
 reverseString("hello");
 ```
