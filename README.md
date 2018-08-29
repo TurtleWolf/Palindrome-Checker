@@ -16,3 +16,9 @@ function palindrome(str) {
 
 palindrome("eye");
 ```
+
+```
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou^1-9]/gi; // not vowel or number
+let result = quoteSample.match(myRegex); // sample of regex
+```
