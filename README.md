@@ -4,12 +4,18 @@
 
 ```
 function palindrome(str) {
+
   // if str === rts return true
+  
    if (str == str) {
-    console.log(str)     ;
+   
+    console.log(str);
+    
     return true;
+    
   } else {//default = not a palindrome
     return false;
+    
   }
 
 }
